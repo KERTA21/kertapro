@@ -1,12 +1,4 @@
-import subprocess, sys, os
 
-try:
-    import requests, urllib3, uuid
-except ImportError:
-    print("Gerekli modüller indiriliyor...")
-    subprocess.check_call([sys.executable, "-m", "pip", "install", "requests==2.28.2", "urllib3==1.26.13", "uuid==1.30"])
-finally:
-    import concurrent.futures, json, os, random, requests, string, time, urllib, urllib3, uuid
 
 def a101(number):
     try:
